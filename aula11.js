@@ -6,7 +6,7 @@
 
 // Exemplo 1:
 for(let i = 0; i < 10; i++){
-    console.log(i);
+    setTimeout(() => console.log(i), 200 * i); // coloca lentidão
 }
 
 // Exemplo 2:
@@ -17,3 +17,32 @@ for(let i = 0; i < 10; i++){
 }
 
 console.log(numbers);
+
+// Exemplo 3:
+const fruits = ["maçã", "banana", "laranja", "manga", "uva"];
+
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+// Exemplo 4:
+const rl = require("node:readline");
+
+const prompt = rl.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+prompt.question("Qual número deseja ver a tabuada? ", answer => {
+    const number = Number.parseInt(answer);
+
+    if (Number.isNaN(number)){
+        console.log("Por favor, insira um número válido.");
+    } else {
+        console.log(`Tabuada do ${number}:`);
+        for(let i = 1; i <= 10; i++){
+            console.log(`${number} x ${i} = ${number * i}`);
+        }
+    }
+    prompt.close();
+});
