@@ -5,11 +5,13 @@
 // }
 
 // Exemplo 1:
+console.log("\nExemplo 1:");
 for(let i = 0; i < 10; i++){
     setTimeout(() => console.log(i), 200 * i); // coloca lentidão
 }
 
 // Exemplo 2:
+console.log("\nExemplo 2:");
 const numbers = [];
 
 for(let i = 0; i < 10; i++){
@@ -19,6 +21,7 @@ for(let i = 0; i < 10; i++){
 console.log(numbers);
 
 // Exemplo 3:
+console.log("\nExemplo 3:");
 const fruits = ["maçã", "banana", "laranja", "manga", "uva"];
 
 for(let i = 0; i < fruits.length; i++){
@@ -26,6 +29,7 @@ for(let i = 0; i < fruits.length; i++){
 }
 
 // Exemplo 4:
+console.log("\nExemplo 4:");
 const rl = require("node:readline");
 
 const prompt = rl.createInterface({

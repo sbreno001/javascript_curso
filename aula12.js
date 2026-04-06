@@ -3,7 +3,7 @@
 // while (condição) {}
 
 // Exemplo com break
-console.log("Exemplo com break");
+console.log("\nExemplo com break");
 let exemplo1 = 0;
 while(exemplo1 <=20){
 
@@ -16,7 +16,7 @@ while(exemplo1 <=20){
 }
 
 // Exemplo com coninue
-console.log("Exemplo com continue");
+console.log("\nExemplo com continue");
 let exemplo2 = 0;
 while(exemplo2 <=20){
     exemplo2++;
@@ -30,7 +30,7 @@ while(exemplo2 <=20){
 }
 
 // Exemplo com do while
-console.log("Exemplo com do while");
+console.log("\nExemplo com do while");
 const rl = require("node:readline");
 
 const prompt = rl.createInterface({
