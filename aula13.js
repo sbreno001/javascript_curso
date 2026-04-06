@@ -53,3 +53,11 @@ function criacaoTag(nome, prefixo, sufixo){
 
 const tag = criacaoTag("Breno", "[Desenvolvedor]", "Dev");
 console.log(tag);
+
+// Exemplo 6
+console.log("\nExemplo 6:")
+function potencia(numero, expoente=2){
+    return numero ** expoente;
+}
+
+console.log(potencia(2, 3));
