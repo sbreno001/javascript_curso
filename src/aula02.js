@@ -1,19 +1,20 @@
+import readline from "node:readline";
+
 // Variáveis const let var - 02
 
 // const -> não pode ser alterado
+console.log("\nExemplo 1:");
 const passaword = "Athena2025@";
-
 console.log(passaword);
 
 // let -> pode ser alterado
+console.log("\nExemplo 2:");
 let username = "Breno";
-
 username = "Athena";
-
 console.log(username);
 
-// Tipos de variáveis 
-
+// Tipos de variáveis
+console.log("\nExemplo 3:");
 const string = "Este é um texto";
 const number = 10;
 const boolean = true;
@@ -25,21 +26,19 @@ const func = () => {
 const date = new Date();
 
 // Recebendo entrada de um usuário
-
-const rl = require("node:readline");
-
-const prompt = rl.createInterface({
+console.log("\nExemplo 4:");
+const prompt = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 
 let name;
 
-prompt.question("Qual é o seu nome? ", answer => {
+prompt.question("Qual é o seu nome? ", (answer) => {
     name = answer;
     prompt.close();
 });
 
 prompt.on("close", () => {
-    console.log("Seja bem vindo", name)
+    console.log("Seja bem vindo", name);
 });

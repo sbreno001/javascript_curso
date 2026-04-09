@@ -1,3 +1,5 @@
+import readline from "node:readline";
+
 // Objetos - 15
 
 // Exemplo 1:
@@ -35,9 +37,8 @@ console.log(computador.fonte.watts);
 
 // Exemplo 3:
 console.log("\nExemplo 3:");
-const rl = require("readline");
 
-const prompt = rl.createInterface({
+const prompt = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 })

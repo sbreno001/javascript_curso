@@ -1,3 +1,5 @@
+import readline from "node:readline";
+
 // Laço de repetição While - 12
 
 // while (condição) {}
@@ -31,9 +33,8 @@ while(exemplo2 <=20){
 
 // Exemplo com do while
 console.log("\nExemplo com do while");
-const rl = require("node:readline");
 
-const prompt = rl.createInterface({
+const prompt = readline.createInterface({
     input: process.stdin, output: process.stdout
 })
 
